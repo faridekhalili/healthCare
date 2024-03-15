@@ -3,7 +3,7 @@ import { ElementsContextProvider } from './DoctorServicesContextApi'
 import DoctorServicesList from './DoctorServicesList'
 // import Home from './Home'
 
-export default function DoctorServices() {
+function DoctorServices() {
   return (
     <div className='w-full overflow-x-hidden'>
         <ElementsContextProvider>
@@ -12,3 +12,5 @@ export default function DoctorServices() {
     </div>
   )
 }
+
+export default React.memo(DoctorServices);
